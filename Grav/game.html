@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Grav</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+</head>
+
+
+<body>
+
+	<div id='home'>
+		<h1>Grav</h1>
+		<h3>
+			<ul>
+				<li> Press 'up' to change the direction of gravity upwards</li>
+				<li> Press 'down' to change the direction of gravity downwards</li>
+			</ul>
+		</h3>
+		<button id ='start'>Start</button>
+	</div>
+  
+	<div id='game'>
+		<svg width='100%' height= '500'>
+				<rect id = 'player' x = '90' y = '50' width = '40' height = '40'/>
+				<rect id = 'top' x = '0' y = '0' width = '100%' height = '50'/>
+				<rect id = 'bottom' x = '0' y = '400' width = '100%' height = '50'/>
+				<rect class = 'enemy' x = '1500' y = '50' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '1900' y = '50' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '1900' y = '50' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '2300' y = '50' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '2300' y = '50' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '1800' y = '360' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '1800' y = '360' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '2000' y = '360' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '2000' y = '360' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '2600' y = '360' width = '40' height = '40'/>
+				<rect class = 'enemy' x = '2600' y = '360' width = '40' height = '40'/>
+
+				<text id="score" x="80%" y="85" color = "white">
+		</svg>
+	</div>
+	
+	<div id='replay'>
+		<h1>Game Over</h1>
+		<h2 id = "endScore"> Score : 0</h2>
+		<button id ='re'>Replay</button>		
+	</div>
+	
+	<script src="gameplay.js"></script>
+  
+</body>
+
+</html>
